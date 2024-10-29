@@ -28,5 +28,4 @@ urlpatterns = (
         path("", include("taxi.urls", namespace="taxi")),
     ]
     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    + debug_toolbar_urls()
 )
